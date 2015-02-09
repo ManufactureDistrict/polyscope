@@ -1,6 +1,6 @@
 # Polyscope
 
-Polyscope is a mutation of Microscope from [The Meteor Book](http://themeteorbook.com) which is a simple social news app that lets you share links, comment, and vote on them.
+Polyscope is a [Polymer](https://www.polymer-project.org/) / [Material Design](http://www.google.com/design/spec/material-design/introduction.html) mutation of Microscope from [The Meteor Book](http://themeteorbook.com) which is a simple social news app that lets you share links, comment, and vote on them.
 
 Microscope was built with [Meteor](http://meteor.com) as a companion app to [The Meteor Book](http://themeteorbook.com), and is the "little brother" of [Telescope](http://telesc.pe), the (much more complex) open-source social news app that was the inspiration for the book.
 
