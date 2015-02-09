@@ -3,6 +3,8 @@ Polyscope is a [Polymer](https://www.polymer-project.org/) / [Material Design](h
 
 Microscope was built with [Meteor](http://meteor.com) as a companion app to [The Meteor Book](http://themeteorbook.com), and is the "little brother" of [Telescope](http://telesc.pe), the (much more complex) open-source social news app that was the inspiration for the book.
 
+Here is a [live Demo](http://polyscope.meteor.com)!
+
 Polyscope & Microsocope are free and open-source, and are an excellent example of common Meteor & Polymer app patterns such as:
 
 - Routing
@@ -13,7 +15,7 @@ Polyscope & Microsocope are free and open-source, and are an excellent example o
 - Permissions
 - Polymer core-elements
 - Polymer paper-elements
-- Polymer custom-elements (in my example I use some components from differential [Blogpost](http://differential.com/blog/meteor-polymer)
+- Polymer custom-elements (in my example I use some components from differential) [Blogpost](http://differential.com/blog/meteor-polymer)
 - Material design inspirations
 
 Hope this will be useful for one or the other and feel free to submit issues and pull requests.
