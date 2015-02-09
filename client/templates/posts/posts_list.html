@@ -1,0 +1,28 @@
+<template name="postsList">
+  <style>
+    .green {
+      background: #49af9a;
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0;
+    }
+  </style>
+  <div class="posts">
+    {{#each postsWithRank}}
+      {{> postItem}}
+    {{/each}}
+    
+    {{#if nextPath}}
+      <a href="{{nextPath}}">
+        <paper-button raised layout horizontal  center-center  class="green">
+          Load more
+        </paper-button>
+      </a>
+    {{else}}
+      {{#unless ready}}
+        {{> spinner}}
+      {{/unless}}
+    {{/if}}
+  </div>
+</template>

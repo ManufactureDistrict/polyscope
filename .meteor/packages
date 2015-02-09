@@ -1,0 +1,22 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+accounts-password
+differential:vulcanize
+iron:router
+less
+matteodem:server-session
+meteorhacks:inject-initial
+mdg:camera
+mdg:geolocation
+mdg:reload-on-resume
+meteor-platform
+u2622:persistent-session
+underscore
+useraccounts:core
+velocityjs:velocityjs
+yogiben:helpers
+zimme:iron-router-active
+zimme:iron-router-auth

@@ -1,0 +1,44 @@
+<template name="postItem">
+  <style>
+    .orange {
+      background: #f4702b;
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0;
+    }
+    .blue {
+      background: #2d7dc7;
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0;
+      left: -5px;
+      margin-bottom: 5px;
+    }
+  </style>
+
+  <post-card>
+    <img src="/images/boy.png">
+    <h2>{{author}}</h2>
+    <div class="post" {{attributes}}>
+      <a href="#" class="upvote {{upvotedClass}}"><core-icon-button icon="thumb-up" title="Upvote"></core-icon-button></a>
+      <div class="post-content">
+        <core-item >
+          <div flex>
+            <div class="name"><a href="{{url}}"> <paper-button class="blue">{{title}}</paper-button></a><span> {{domain}}</span></div>
+            <div class="address">{{pluralize votes "Vote"}}, submitted by {{author}},
+              <a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comment"}}</a>
+                <!--{{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}-->
+            </div>
+          </div>
+        </core-item>
+      </div>
+      <a href="{{pathFor 'postPage'}}"><paper-button raised class="discuss orange">Discuss</paper-button></a>
+
+      <a href="{{pathFor 'postEdit'}}"><paper-button raised class="discuss blue">Edit</paper-button></a>
+    </div>
+  </post-card>
+
+
+</template>

@@ -1,0 +1,76 @@
+<template name="layout">
+    {{> errors}}
+  <core-scaffold responsiveWidth="1920px" mode="waterfall-tall">
+
+    <core-header-panel navigation flex mode="waterfall">
+      <core-toolbar>
+        <core-image class="sizedMenu" sizing="cover" src="../../images/calendar.png"></core-image>
+      </core-toolbar>
+      <core-menu>
+        <core-item icon="home" label="Home" class="{{activeRouteClass 'home'}}"><a href="{{pathFor 'home'}}"></a>
+        </core-item>
+        <core-item icon="chevron-right" label="New posts" class="{{activeRouteClass 'home' 'newPosts'}}"><a
+          href="{{pathFor 'newPosts'}}"></a></core-item>
+        <core-item icon="chevron-right" label="Best posts" class="{{activeRouteClass 'bestPosts'}}"><a
+          href="{{pathFor 'bestPosts'}}"></a></core-item>
+          {{#if currentUser}}
+            <core-item icon="chevron-right" label="Create post" class="{{activeRouteClass 'postSubmit'}}">
+              <a href="{{pathFor 'postSubmit'}}"></a>
+            </core-item>
+            <hr>
+            <a href="{{pathFor route='accounts.signOut'}}">
+              <paper-item class="toolbar-item" data-action="sign-out">
+                Sign Out
+              </paper-item>
+            </a>
+          {{else}}
+            <a href="{{pathFor route='accounts.signUp'}}">
+              <paper-item class="toolbar-item" data-action="sign-up">
+                Sign Up
+              </paper-item>
+            </a>
+            <a href="{{pathFor route='accounts.signIn'}}">
+              <paper-item class="toolbar-item" data-action="sign-in">
+                Sign In
+              </paper-item>
+            </a>
+
+            <!--{{> notifications}}-->
+          {{/if}}
+      </core-menu>
+    </core-header-panel>
+
+    <div tool mode="waterfall-tall"></div>
+
+    <hr class="divider">
+    <a href="{{pathFor 'postSubmit'}}">
+      <paper-fab mini icon="add" class="paper-fab-main"></paper-fab>
+    </a>
+
+    <div flex></div>
+
+    <div tool flex class="top">
+      <a href="{{pathFor 'home'}}">
+        <core-image id="mainlogo" class="sized" src="../../images/polyfire-logo.png"></core-image>
+      </a>
+    </div>
+    <!--<div tool horizontal layout flex center-justified class="middle">Title-middle</div>-->
+    <div tool horizontal layout flex end-justified class="bottom">
+      <paper-dropdown-menu label="Notifications">
+        <paper-dropdown class="dropdown">
+          <core-menu class="menu">
+              {{> notifications}}
+          </core-menu>
+        </paper-dropdown>
+      </paper-dropdown-menu>
+
+    </div>
+
+    <paper-shadow class="content" z="3">
+        {{> yield}}
+    </paper-shadow>
+
+  </core-scaffold>
+  <paper-toast global-toast id="toast1" text=""></paper-toast>
+
+</template>

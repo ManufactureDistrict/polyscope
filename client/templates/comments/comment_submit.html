@@ -1,0 +1,21 @@
+<template name="commentSubmit">
+  <di-form name="comment" class="comment-form form" data-action="add-comment">
+    <div class="form-group {{errorClass 'body'}}">
+      <div class="controls">
+        <paper-input-decorator floatingLabel label="Please type your comments here...">
+          <textarea name="body" id="body" class="form-control" rows="3"></textarea>
+          </paper-input-decorator>
+          <!-- <paper-autogrow-textarea>-->
+          <!--<textarea name="body" id="body" class="form-control" rows="3" placeholder="Please type here..."></textarea>-->
+        <!--</paper-autogrow-textarea>-->
+        <br>
+        <br>
+
+        <span class="help-block">{{errorMessage 'body'}}</span>
+      </div>
+    </div>
+    <div horizontal layout>
+      <di-button class="btn btn-accent" type="submit" raised>Add comment</di-button>
+    </div>
+  </di-form>
+</template>
