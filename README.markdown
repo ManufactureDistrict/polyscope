@@ -17,5 +17,7 @@ Polyscope & Microsocope are free and open-source, and are an excellent example o
 - Polymer custom-elements (in my example I use some components from differential [Blogpost](http://differential.com/blog/meteor-polymer)
 - Material design inspirations
 
+Hope this will be useful for one or the other and feel free to submit issues and pull requests.
+
 # Polyscope License
-MIT
+Same license rules apply as with Microscope
