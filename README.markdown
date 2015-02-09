@@ -20,3 +20,10 @@ Hope this will be useful for one or the other and feel free to submit issues and
 
 # Polyscope License
 Same license rules apply as with Microscope
+
+# Some screenshots
+![Alt text](https://github.com/meteorpoly/polyscope/blob/master/public/images/Main%20screen.png "Polyfire")
+![Alt text](https://github.com/meteorpoly/polyscope/blob/master/public/images/Details%20screen.png "Polyfire")
+![Alt text](https://github.com/meteorpoly/polyscope/blob/master/public/images/Add%20comment%20screen.png "Polyfire")
+![Alt text](https://github.com/meteorpoly/polyscope/blob/master/public/images/Creation%20screen.png "Polyfire")
+![Alt text](https://github.com/meteorpoly/polyscope/blob/master/public/images/Notification%20screen.png "Polyfire")
