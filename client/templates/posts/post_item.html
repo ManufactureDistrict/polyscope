@@ -26,8 +26,8 @@
       <div class="post-content">
         <core-item >
           <div flex>
-            <div class="name"><a href="{{url}}"> <paper-button class="blue">{{title}}</paper-button></a><span> {{domain}}</span></div>
-            <div class="address">{{pluralize votes "Vote"}}, submitted by {{author}},
+            <div flex class="name"><a href="{{url}}"> <paper-button class="blue">{{title}}</paper-button></a><span> {{domain}}</span></div>
+            <div flex class="address">{{pluralize votes "Vote"}}, submitted by {{author}},<br>
               <a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comment"}}</a>
                 <!--{{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}-->
             </div>
