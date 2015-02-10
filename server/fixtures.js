@@ -4,19 +4,19 @@ if (Posts.find().count() === 0) {
   
   // create two users
   var tomId = Meteor.users.insert({
-    profile: { name: 'Tom Coleman' }
+    profile: { name: 'Polyscope' }
   });
   var tom = Meteor.users.findOne(tomId);
   var sachaId = Meteor.users.insert({
-    profile: { name: 'Sacha Greif' }
+    profile: { name: 'Meteorpoly' }
   });
   var sacha = Meteor.users.findOne(sachaId);
   
   var telescopeId = Posts.insert({
-    title: 'Introducing Telescope',
+    title: 'Introducing Poliscope',
     userId: sacha._id,
     author: sacha.profile.name,
-    url: 'http://sachagreif.com/introducing-telescope/',
+    url: 'https://github.com/meteorpoly/polyscope/',
     submitted: new Date(now - 7 * 3600 * 1000),
     commentsCount: 2,
     upvoters: [], votes: 0
@@ -27,7 +27,7 @@ if (Posts.find().count() === 0) {
     userId: tom._id,
     author: tom.profile.name,
     submitted: new Date(now - 5 * 3600 * 1000),
-    body: 'Interesting project Sacha, can I get involved?'
+    body: 'Interesting project Meteor, can I get involved?'
   });
   
   Comments.insert({
@@ -35,7 +35,7 @@ if (Posts.find().count() === 0) {
     userId: sacha._id,
     author: sacha.profile.name,
     submitted: new Date(now - 3 * 3600 * 1000),
-    body: 'You sure can Tom!'
+    body: 'You sure can Polyscope!'
   });
   
   Posts.insert({
